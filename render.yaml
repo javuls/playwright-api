@@ -3,6 +3,6 @@ services:
     name: playwright-api
     env: node
     plan: free
-    buildCommand: npm install
+    buildCommand: npm install && npx playwright install
     startCommand: npm start
     autoDeploy: true
